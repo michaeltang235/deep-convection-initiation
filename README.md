@@ -11,14 +11,17 @@ Numerical simulations are conducted using Bryan Cloud Model (CM1) version 19, wi
 There are two scripts presented for each analysis, one for analyzing numerical output and the other for making plots using the processed data. Model output is written to file (.nc) every simulated minute (60s) or 90s, depending on cases. We used Matlab to read variables from the NetCDF files. 
 
 (1) Cloud-top height:
-* creating a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.  <br/>
-* related scripts are 'cloudth.m' and 'cloudth_1_plot.m'
+* a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.  <br/>
+* related scripts: 'cloudth.m' and 'cloudth_1_plot.m'
 
 (2) Surface convergence:
-* creating a time series which shows the magnitude of surface convergence, averaged in y along the convergence line, and in x over the central 1 km of the domain.  <br/>
-* related scripts are 'conver_2.m' and 'subplot_4fig_1.m'
+* a time series which shows the magnitude of surface convergence, averaged in y along the convergence line, and in x over the central 1 km of the domain.  <br/>
+* related scripts: 'conver_2.m' and 'subplot_4fig_1.m'
 
 (3) Mass flux profile:
+* creates profiles of (a) total mass flux, (b) total area, (c)average vertical velocity w, average buoyancy b, and average hydrometero mixing ratio qh, of convective cores over the whole the domain during each simulated hour.
+* related scripts: 'ascmsfx_wbpqcqi_hydrometeor.m' and 'ascmf_wbpqcqi_hydrometeor_plot.m'
+
 
 
 
