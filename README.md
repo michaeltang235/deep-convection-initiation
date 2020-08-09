@@ -15,3 +15,6 @@ Numerical simulations are conducted using Bryan Cloud Model (CM1) version 19, wi
 
 
 
+
+**Ref.**
+Link to CM1 model(https://www2.mmm.ucar.edu/people/bryan/cm1/)
