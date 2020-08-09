@@ -7,9 +7,21 @@ Moist convection is fundamental in regulating a variety of atmospheric phenomena
 **Model setup:**\
 Numerical simulations are conducted using Bryan Cloud Model (CM1) version 19, with domain size of 120 km, 180 km, and 20 km in the x, y, and z directions, respectively. While the vertical grid size increases with height, the horizontal grid size is varied from 125 m, to 250 m, to 500 m, and to 1 km in different experiments. A diurnally time-varying and Gaussian-shaped surface heating function with peak amplitude located at the center of the domain (x=0 km) is imposed to induce mesoscale convergence in the x-z plane. The heating function is symmetric in x and uniform in y. The former generates locally strong horizontal convergence and a subcloud updraft that breaches into the cloud layer to initiate cumulus convection, while the latter allows statisitcal sampling of the numerically simulated clouds.
 
-**Analyses:**
+**Analyses:**\
+There are two scripts presented for each analysis, one for analyzing numerical output and the other for making plots using the processed data. Model output is written to file (.nc) every simulated minute (60s) or 90s, depending on cases. We used Matlab to read variables from the NetCDF files. 
 
-(1) Cloud-top height: $\delta$
+(1) Cloud-top height:
+creating a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.\
+scripts are 'cloudth.m' and 'cloudth_1_plot.m'\
+
+(2) Surface convergence:
+creating a time series which shows the magnitude of surface convergence, averaged in y along the convergence line, and in x over the central 1 km of the domain.\
+scripts are 'conver_2.m' and 'subplot_4fig_1.m'\
+
+(3) Mass flux profile:
+
+
+
 
 
 
