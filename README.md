@@ -9,8 +9,7 @@ Numerical simulations are conducted using Bryan Cloud Model (CM1) version 19, wi
 
 **Analyses:**
 
-(1) Cloud-top height: $`\sqrt{2}`$
-
+(1) Cloud-top height: \imath $\rightarrow$
 
 
 
