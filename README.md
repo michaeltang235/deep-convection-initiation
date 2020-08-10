@@ -8,7 +8,7 @@ Moist convection is fundamental in regulating a variety of atmospheric phenomena
 Numerical simulations are conducted using Bryan Cloud Model ([CM1](https://www2.mmm.ucar.edu/people/bryan/cm1/)) version 19, with domain size of 120 km, 180 km, and 20 km in the x, y, and z directions, respectively. While the vertical grid size increases with height, the horizontal grid size is varied from 125 m, to 250 m, to 500 m, and to 1 km in different experiments. A diurnally time-varying and Gaussian-shaped surface heating function with peak amplitude located at the center of the domain (x=0 km) is imposed to induce mesoscale convergence in the x-z plane. The heating function is symmetric in x and uniform in y. The former generates locally strong horizontal convergence and a subcloud updraft that breaches into the cloud layer to initiate cumulus convection, while the latter allows statisitcal sampling of the numerically simulated clouds.
 
 **Analyses:**\
-There are two scripts presented for each analysis, one for analyzing numerical output and the other for making plots using the processed data. Model output is written to file (.nc) every simulated minute (60s) or 90s, depending on cases. We used Matlab to read variables from the NetCDF files. 
+There are two scripts presented for each analysis, one for analyzing numerical output and the other for making plots using the processed data. Model output is written to file (.nc) every simulated minute (60s) or 90s, depending on cases. Variabels from the NetCDF files are read using Matlab. Each analysis compares the behaviour or amplitude of the stated quantity among different grid spacings used.
 
 (1) Cloud-top height:
 * a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.  <br/>
@@ -21,5 +21,9 @@ There are two scripts presented for each analysis, one for analyzing numerical o
 (3) Mass flux profile:
 * creates profiles of (a) total mass flux, (b) total area, (c)average vertical velocity w, average buoyancy b, and average hydrometero mixing ratio qh, of convective cores over the whole the domain during each simulated hour.
 * related scripts: 'ascmsfx_wbpqcqi_hydrometeor.m' and 'ascmf_wbpqcqi_hydrometeor_plot.m'
+
+(4) Fractional entrainment and detrainment profiles:
+* create profiles of (a) fractional entrianment rate and (b) fractional detrainment rate, averaged over all convective clouds during each hour.
+* related scripts: (analysis): 'detrainment_theta_il.m', 'fracmf.m', 'detrainment_theta_il.m'; (plotting): ' entrain_detrain_thil_plot.m'
 
 
