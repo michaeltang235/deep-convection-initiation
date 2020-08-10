@@ -27,7 +27,7 @@ There are generally two scripts presented for each analysis, one for analyzing n
   4. Fractional entrainment and detrainment profiles:
   * uses ice-liquid water potential temperature as conserved variable when calculating moist static energy (see [Bryan and Fritsch (2004)](https://doi.org/10.1175/1520-0493(2004)132%3C2421:AROIWP%3E2.0.CO;2) for details)
   * create profiles of (a) fractional entrianment rate and (b) fractional detrainment rate, averaged over all convective clouds during each hour.
-  * related scripts: (analysis): 'detrainment_theta_il.m', 'fracmf.m', 'detrainment_theta_il.m'; (plotting): ' entrain_detrain_thil_plot.m'
+  * related scripts: (analysis): 'theta_il.m', 'fracmf.m', 'detrainment_theta_il.m'; (plotting): ' entrain_detrain_thil_plot.m'
   
 **(II) Parcel trajectories:**
   1. Distribution of vertical velocity of parcels prior to crossing cloud base
@@ -40,7 +40,7 @@ There are generally two scripts presented for each analysis, one for analyzing n
   1. Vertical velocity (w)-budget profile
   * computes each term in the vertical momentum euqation
   * creates profiles that show (a) left-hand side term and (b) sum of right-hand side terms, of the equation  
-  * related scripts: 'wbudget_1_profiles.m' and 'wbudget_1_profiles.m'
+  * related scripts: 'wbudget_1.m' and 'wbudget_1_profiles.m'
   
   2. Contour plot of each term in the w-momentum equation
   * computes y- and time-average of each term in the vertical momentum equation
