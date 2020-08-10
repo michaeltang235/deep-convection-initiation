@@ -12,13 +12,13 @@ There are generally two scripts presented for each analysis, one for analyzing n
 
 
 (1) Cloud-layer analysis
-  (1) Cloud-top height:
-    * a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.  <br/>
-    * related scripts: 'cloudth.m' and 'cloudth_1_plot.m'
-
-  (2) Surface convergence:
-    * a time series which shows the magnitude of surface convergence, averaged in y along the convergence line, and in x over the central 1 km of the domain.  <br/>
-    * related scripts: 'conver_2.m' and 'subplot_4fig_1.m'
+  1. Cloud-top height:
+  * a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.  <br/>
+  * related scripts: 'cloudth.m' and 'cloudth_1_plot.m'
+  
+  2. Surface convergence:
+  * a time series which shows the magnitude of surface convergence, averaged in y along the convergence line, and in x over the central 1 km of the domain.  <br/>
+  * related scripts: 'conver_2.m' and 'subplot_4fig_1.m'
 
 (3) Mass flux profile:
 * creates profiles of (a) total mass flux, (b) total area, (c)average vertical velocity w, average buoyancy b, and average hydrometero mixing ratio qh, of convective cores over the whole the domain during each simulated hour.
