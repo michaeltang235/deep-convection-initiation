@@ -19,6 +19,7 @@ There are two scripts presented for each analysis, one for analyzing numerical o
 * related scripts: 'conver_2.m' and 'subplot_4fig_1.m'
 
 (3) Mass flux profile:
+* uses ice-liquid water potential temperature as the conserved variable when calculating moist static energy (see [Bryan and Fritsch (2004)](https://doi.org/10.1175/1520-0493(2004)132%3C2421:AROIWP%3E2.0.CO;2) for details)
 * creates profiles of (a) total mass flux, (b) total area, (c)average vertical velocity w, average buoyancy b, and average hydrometero mixing ratio qh, of convective cores over the whole the domain during each simulated hour.
 * related scripts: 'ascmsfx_wbpqcqi_hydrometeor.m' and 'ascmf_wbpqcqi_hydrometeor_plot.m'
 
