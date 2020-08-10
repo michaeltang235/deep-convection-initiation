@@ -23,12 +23,3 @@ There are two scripts presented for each analysis, one for analyzing numerical o
 * related scripts: 'ascmsfx_wbpqcqi_hydrometeor.m' and 'ascmf_wbpqcqi_hydrometeor_plot.m'
 
 
-
-
-
-
-
-
-
-**Ref.**\
-[Details of CM1 model](https://www2.mmm.ucar.edu/people/bryan/cm1/)
