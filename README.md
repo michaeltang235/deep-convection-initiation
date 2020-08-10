@@ -11,7 +11,7 @@ Numerical simulations are conducted using Bryan Cloud Model ([CM1](https://www2.
 There are generally two scripts presented for each analysis, one for analyzing numerical output and the other for making plots using the processed data. Model output is written to file (.nc) every simulated minute (60s) or 90s, depending on cases. Variables from the NetCDF files are read using Matlab. Each analysis compares the behaviour or amplitude of the stated quantity among the different grid spacings used. 
 
 
-(I) Cloud-layer analysis
+**(I) Cloud-layer analysis: **
   1. Cloud-top height:
   * a time series that shows the maximum height of cloud over the course of the model integration time (12hrs), with different grid spacings used.  <br/>
   * related scripts: 'cloudth.m' and 'cloudth_1_plot.m'
@@ -29,14 +29,14 @@ There are generally two scripts presented for each analysis, one for analyzing n
   * create profiles of (a) fractional entrianment rate and (b) fractional detrainment rate, averaged over all convective clouds during each hour.
   * related scripts: (analysis): 'detrainment_theta_il.m', 'fracmf.m', 'detrainment_theta_il.m'; (plotting): ' entrain_detrain_thil_plot.m'
   
-(II) Parcel trajectories:
+**(II) Parcel trajectories:**
   1. Distribution of vertical velocity of parcels prior to crossing cloud base
   * uses parcel trajectories provided by the model to monitor the spatial and temporal evolution of parcels
   * measures the numbers of parcels reaching different heights
   * creates histograms showing (a) the distribution of vertical velocity of parcels prior to crossing cloud base for the last time, (b) percentages of parcels that are able to reach different heights
   * related scripts: 'prcl_track_wlcl_1.m' and'prcl_track_wlcl_plot.m'
 
-(III) Subcloud-layer analysis:
+**(III) Subcloud-layer analysis:**
   1. Vertical velocity (w)-budget profile
   * computes each term in the vertical momentum euqation
   * creates profiles that show (a) left-hand side term and (b) sum of right-hand side terms, of the equation  
